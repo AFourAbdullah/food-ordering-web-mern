@@ -66,10 +66,10 @@ app.use("/api/v1", userRoute);
 app.use("/products", productRoute);
 app.use("/orders", orderRoute);
 const path = require("path");
-app.use(express.static(path.resolve(__dirname, "client", "build")));
+app.use(express.static(path.resolve(__dirname, "client", "dist")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "client", "dist", "index.html"));
 });
 app.use(errMiddleware);
 

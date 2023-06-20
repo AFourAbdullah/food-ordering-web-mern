@@ -108,14 +108,6 @@ const Orders = () => {
           </button>
         </div>
       </div>
-      <Modal
-        isVisible={showModal}
-        onCancel={hideModal}
-        onCloseButtonPressed={hideModal}
-        onOk={hideModal}
-      >
-        <h1>COngratulations</h1>
-      </Modal>
     </div>
   );
 };

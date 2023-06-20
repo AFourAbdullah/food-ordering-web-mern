@@ -37,7 +37,7 @@ app.use(cors());
 
 app.get("/config", (req, res) => {
   res.send({
-    publishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
+    publishableKey: process.env.VITE_STRIPE_PUBLISHABLE_KEY,
   });
 });
 

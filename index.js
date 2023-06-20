@@ -21,11 +21,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 const connect = () => {
   mongoose
     .connect(
-      "mongodb+srv://admin-rizwan:Test123@cluster0.y5gay.mongodb.net/FoodDeliveryApp?retryWrites=true&w=majority",
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      }
+      "mongodb+srv://admin-rizwan:Test123@cluster0.y5gay.mongodb.net/FoodDeliveryApp?retryWrites=true&w=majority"
     )
     .then(() => {
       console.log("Connected to DB");
@@ -37,9 +33,12 @@ const connect = () => {
 
 app.use(cookieParser());
 app.use(express.json());
+
 app.use(
   cors({
-    origin: "*",
+    origin: true,
+    credentials: true, //access-control-allow-credentials:true
+    optionSuccessStatus: 200,
   })
 );
 

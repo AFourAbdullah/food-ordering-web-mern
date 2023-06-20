@@ -21,7 +21,11 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 const connect = () => {
   mongoose
     .connect(
-      "mongodb+srv://admin-rizwan:Test123@cluster0.y5gay.mongodb.net/FoodDeliveryApp?retryWrites=true&w=majority"
+      "mongodb+srv://admin-rizwan:Test123@cluster0.y5gay.mongodb.net/FoodDeliveryApp?retryWrites=true&w=majority",
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }
     )
     .then(() => {
       console.log("Connected to DB");

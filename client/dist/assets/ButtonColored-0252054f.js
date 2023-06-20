@@ -1,4 +1,4 @@
-import{C as r,g as l,c as o,s as a,j as n,B as s}from"./index-5beaefa8.js";const t=r`
+import{C as r,g as l,c as o,s as a,j as n,B as s}from"./index-ecc36217.js";const t=r`
     :after {
         background-color: ${l("light",90)};
     }

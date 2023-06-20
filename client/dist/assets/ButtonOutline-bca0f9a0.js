@@ -1,4 +1,4 @@
-import{f as t,e as o,k as l,h as r,i as u}from"./index-5beaefa8.js";const a=t(u)`
+import{s as t,c as o,a as l,j as r,B as a}from"./index-ecc36217.js";const u=t(a)`
     background-color: ${o.white};
     border-color: ${o.beauBlue};
     color: ${o.blue};
@@ -24,4 +24,4 @@ import{f as t,e as o,k as l,h as r,i as u}from"./index-5beaefa8.js";const a=t(u)
     svg {
         color: ${o.blue};
     }
-`;var s={ButtonOutlineStyled:a};const{ButtonOutlineStyled:n}=s,$=({...e})=>r(n,{...e});export{$ as default};
+`;var s={ButtonOutlineStyled:u};const{ButtonOutlineStyled:n}=s,$=({...e})=>r(n,{...e});export{$ as default};

@@ -1,4 +1,4 @@
-import{s as o,g as a,c as t,j as e,B as n}from"./index-5beaefa8.js";const l=o(n)`
+import{s as o,g as a,c as t,j as e,B as n}from"./index-ecc36217.js";const l=o(n)`
     background-color: ${a("dark",20)};
     color: ${t.white};
 

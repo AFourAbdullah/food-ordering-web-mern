@@ -1,4 +1,4 @@
-import{f as e,d as r,h as n,i as a}from"./index-5beaefa8.js";const l=e(a)`
+import{s as e,g as r,j as n,B as a}from"./index-ecc36217.js";const l=e(a)`
     background-color: ${t=>{var o;return(o=t.customize)==null?void 0:o.backgroundColor}};
 
     span {

@@ -65,7 +65,7 @@ app.post("/create-payment-intent", async (req, res) => {
 app.use("/api/v1", userRoute);
 app.use("/products", productRoute);
 app.use("/orders", orderRoute);
-const path = require("path");
+import path from "path";
 app.use(express.static(path.resolve(__dirname, "client", "dist")));
 
 app.get("*", (req, res) => {

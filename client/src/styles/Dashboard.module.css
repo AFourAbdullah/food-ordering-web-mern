@@ -1,0 +1,39 @@
+/* Dashboard.css */
+.dashboardContainer {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    flex: 0 0 200px;
+    background-color: #ab131b;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .sidebar li:hover {
+    background-color: #7d0d15;
+  }
+  
+  .sidebar .selected {
+    background-color: #7d0d15;
+  }
+  
+  .contentArea {
+    flex: 1;
+    padding: 20px;
+    overflow: scroll;
+  }  

@@ -1,0 +1,165 @@
+.menuHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.5vmax "Roboto";
+  text-align: center;
+}
+.menu {
+  display: flex;
+  width: 65vw;
+  margin: 2vmax 25vmax;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-between;
+  min-height: 30vh;
+  /* border: 1px solid black; */
+}
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+select {
+  width: 160px !important;
+  height: 40px;
+  margin-top: 20px;
+  /* padding: 20px; */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 300 0.7vmax "Roboto";
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.page-item:hover .page-link {
+  color: rgb(0, 0, 0);
+}
+
+.pageItemActive {
+  background-color: tomato;
+}
+
+.pageLinkActive {
+  color: white;
+}
+.filterBox {
+  width: 10vmax;
+  position: absolute;
+  top: 10vmax;
+  left: 4vmax;
+}
+.categoryBox {
+  padding: 0%;
+}
+.categorylink {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  font: 400 01vmax "Roboto";
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.category-link:hover {
+  color: tomato;
+}
+.filterBox > fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.504);
+}
+.searchBox {
+  width: 60vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.searchBox > input[type="text"] {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  background-color: white;
+  border: none;
+  color: rgba(0, 0, 0, 0.637);
+  padding: 1vmax 2vmax;
+  width: 70%;
+  outline: none;
+  border-radius: 0%;
+  font: 300 1.1vmax cursive;
+  box-sizing: border-box;
+  height: 8%;
+  margin-right: 20px;
+}
+
+input[type="submit"] {
+  height: 8%;
+  border-radius: 0%;
+  background-color: tomato;
+  border: none;
+  padding: 1vmax;
+  width: 28%;
+  font: 300 1.4vmax "Roboto";
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(86, 6, 6);
+}
+
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+    font: 300 4vw cursive;
+    height: 10%;
+  }
+
+  input[type="submit"] {
+    height: 10%;
+    width: 30%;
+    font: 300 4vw "Roboto";
+  }
+  .filterBox {
+    width: 20vmax;
+    position: static;
+    margin: auto;
+  }
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .categorylink {
+    font: 400 1.8vmax "Roboto";
+  }
+  .menu {
+    width: 100vw;
+  }
+}

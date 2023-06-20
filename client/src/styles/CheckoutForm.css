@@ -1,0 +1,44 @@
+#payment-form {
+    border: #F6F9FC solid 1px;
+    border-radius: var(--radius);
+    width: 550px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 30px 50px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%);
+}
+
+.checkoutContainer {
+    /* height: 65vh; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payNow {
+    background: teal;
+  border-radius: var(--radius);
+  color: white;
+  border: 0;
+  padding: 12px 16px;
+  margin-top: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+  margin: 10px auto;
+}
+
+#messages {
+    display: none; /* hide initially, then show once the first message arrives */
+    background-color: #0A253C;
+    color: #00D924;
+    padding: 20px;
+    margin: 20px 0;
+    font-size:0.7em;
+}
+
+.payment-message {
+    margin: 10px auto;
+    color: red;
+}

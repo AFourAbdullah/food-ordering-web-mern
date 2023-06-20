@@ -33,7 +33,11 @@ const connect = () => {
 
 app.use(cookieParser());
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 app.get("/config", (req, res) => {
   res.send({

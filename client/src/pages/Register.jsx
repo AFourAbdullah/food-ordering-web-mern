@@ -77,7 +77,6 @@ const Register = () => {
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <input type="password" placeholder="Confirm Password" />
           {walletAddress ? (
             <button style={{ display: "block", marginBottom: "10px" }}>
               Metamask Connected!!!

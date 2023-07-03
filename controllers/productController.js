@@ -65,11 +65,10 @@ export const updateProduct = async (req, res) => {
 
 //Delete a particular product, for admin dashboard
 export const deleteProduct = async (req, res) => {
-  const id = req.params.id;
 
   try {
-    const product = await Product.findById(id);
-    await product.deleteOne(id);
+    const product = await Product.findById(req.params.id);
+    await Product.findOneAndRemove({_id: req.params.id});
     res.status(200).json("Product Deleted!");
   } catch (error) {
     res.status(500).json(error);

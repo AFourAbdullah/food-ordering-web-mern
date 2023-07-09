@@ -47,22 +47,22 @@ const Menu = () => {
 
   const getAllProducts = async () => {
     let result = await axios.get(
-      `/products?minPrice=${price[0]}&maxPrice=${price[1]}`
+      `https://ill-lime-stingray-cap.cyclic.app/products?minPrice=${price[0]}&maxPrice=${price[1]}`
     );
     if (category !== "" && category === "all") {
       result = await axios.get(
-        `/products?minPrice=${price[0]}&maxPrice=${price[1]}`
+        `https://ill-lime-stingray-cap.cyclic.app/products?minPrice=${price[0]}&maxPrice=${price[1]}`
       );
     }
     if (category !== "" && category != "all") {
       let categoryLowercase = category.toLowerCase();
       result = await axios.get(
-        `/products?category=${categoryLowercase}&minPrice=${price[0]}&maxPrice=${price[1]}`
+        `https://ill-lime-stingray-cap.cyclic.app/products?category=${categoryLowercase}&minPrice=${price[0]}&maxPrice=${price[1]}`
       );
     }
     if (keyword !== "") {
       result = await axios.get(
-        `/products?keyword=${keyword}&minPrice=${price[0]}&maxPrice=${price[1]}`
+        `https://ill-lime-stingray-cap.cyclic.app/products?keyword=${keyword}&minPrice=${price[0]}&maxPrice=${price[1]}`
       );
     }
     console.log("result" + result);

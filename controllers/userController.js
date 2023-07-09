@@ -25,7 +25,7 @@ export const registerUser = asyncHandler(async (req, res) => {
     name,
     email,
     password: hp,
-    walletAddress
+    walletAddress,
   });
 
   if (user) {
@@ -37,7 +37,7 @@ export const registerUser = asyncHandler(async (req, res) => {
 export const loginUser = asyncHandler(async (req, res, next) => {
   const { email, password } = req.body;
   if (!email || !password) {
-    return next(new ErrorHandler("Enter all fileds", 400));
+    return next(new ErrorHandler("Enter all fields", 400));
   }
   const userExists = await User.findOne({ email }).select("+password");
   if (!userExists) {

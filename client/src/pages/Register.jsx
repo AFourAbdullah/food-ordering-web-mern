@@ -3,6 +3,7 @@ import "../styles/Register.css";
 import axios from "axios";
 import { ethers } from "ethers";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const [name, setName] = useState();
@@ -53,6 +54,7 @@ const Register = () => {
 
       navigate("/cart");
     } catch (error) {
+      toast.error(error.response.data.message);
       console.log(error);
     }
   };

@@ -55,7 +55,7 @@ const Register = () => {
       navigate("/cart");
     } catch (error) {
       toast.error(error.response.data.message);
-      console.log(error);
+      console.log("signup errorrrrr is",error);
     }
   };
 

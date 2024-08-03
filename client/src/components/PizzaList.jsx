@@ -9,7 +9,7 @@ const PizzaList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://ill-lime-stingray-cap.cyclic.app/products/");
+        const response = await axios.get("/products/");
         const pizzaProducts = response.data.products.filter(
           (product) => product.category === "pizza"
         );
